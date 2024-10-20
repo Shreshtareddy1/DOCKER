@@ -1,0 +1,3 @@
+NAME                                   READY   STATUS         RESTARTS   AGE
+my-docker-deployment-c648587db-2gxfh   0/1     ErrImagePull   0          64s
+my-docker-deployment-c648587db-rxcvl   0/1     ErrImagePull   0          64s

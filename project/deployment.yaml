@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-docker-deployment
+spec:
+  replicas: 2  # Define how many replicas you want
+  selector:
+    matchLabels:
+      app: my-docker-app
+  template:
+    metadata:
+      labels:
+        app: my-docker-app
+    spec:
+      containers:
+      - name: my-container
+        image: your-docker-image  # Replace this with the name of your container image
+        ports:
+        - containerPort: 80  # Specify the port that the container listens on
